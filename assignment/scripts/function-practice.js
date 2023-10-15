@@ -46,6 +46,8 @@ function isPositive(number) {
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
+isPositive(-8);
+isPositive(8943);
 console.log(isPositive(-8));
 console.log(isPositive(8943));
 
@@ -65,20 +67,22 @@ function getLast(array) {
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
+
+
 function find(value, array) {
-  for(value of array){
   for (let i=0; i<array.length; i++){
-    if (array[i] === value){
-      return true;
+    if(array[i] === value){
+    return true;
+    } 
+    else {
+    return false;
     }
-    else{
-      return false;
-    }
-  } 
   }
 }
- let arr1 = [8, 6, 7, 5, 3, 0, 9];
- console.log(find(7, arr1));
+let phoneNumber = [8, 6, 7, 5, 3, 0, 9]
+console.log(find(5, phoneNumber));
+// It's showing an error message for me in the browser and also the function
+// is not working properly for me but I do not know what to do!!!
 
 // ----------------------
 // Stretch Goals
