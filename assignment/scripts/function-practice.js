@@ -25,14 +25,14 @@ function addNumbers(firstNumber, secondNumber) {
   return firstNumber + secondNumber;
 }
 
-console.log(addNumbers(8, 11));
+console.log('What is 8 + 11?', addNumbers(8, 11));
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num0, num1, num2) {
   return num0 * num1 * num2;
 
 }
 
-console.log(multiplyThree(231, 4, 1.5));
+console.log('What is 231*4*1.5?', multiplyThree(231, 4, 1.5));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -48,8 +48,8 @@ function isPositive(number) {
 // Write a separate console.log statement for each outcome
 isPositive(-8);
 isPositive(8943);
-console.log(isPositive(-8));
-console.log(isPositive(8943));
+console.log('Is -8 a positive number?', isPositive(-8));
+console.log('Is 8943 a positive number?', isPositive(8943));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
@@ -68,21 +68,19 @@ function getLast(array) {
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
 
-
 function find(value, array) {
   for (let i=0; i<array.length; i++){
     if(array[i] === value){
     return true;
-    } 
-    else {
-    return false;
     }
   }
+  return false;
 }
-let phoneNumber = [8, 6, 7, 5, 3, 0, 9]
-console.log(find(5, phoneNumber));
-// It's showing an error message for me in the browser and also the function
-// is not working properly for me but I do not know what to do!!!
+let phoneNumber = [8, 6, 7, 5, 3, 0, 9];
+
+console.log('Example array: ', phoneNumber);
+console.log('Is there a zero? ', find(0, phoneNumber));
+console.log('Is there a four? ', find(4, phoneNumber));
 
 // ----------------------
 // Stretch Goals
@@ -90,10 +88,13 @@ console.log(find(5, phoneNumber));
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  if(letter === string[0]){
+    return true;
+  }
+return false;
 }
-
-
+console.log('Is the first letter in Essie an E?', isFirstLetter('E', 'Essie'));
+console.log('Is the first letter in Essie an S?', isFirstLetter('S', 'Essie'));
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
