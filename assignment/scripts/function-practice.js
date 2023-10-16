@@ -100,13 +100,16 @@ console.log('Is the first letter in Essie an E?', isFirstLetter('E', 'Essie'));
 console.log('Is the first letter in Essie an S?', isFirstLetter('S', 'Essie'));
 
 // 9. Function to return the sum of all numbers in an array
+let fibonacci = [1, 1, 2, 3, 5, 8, 13, 21];
+console.log('Fibonacci array:', fibonacci);
+
 function sumAll(array) {
   let sum = 0;
-  for (i=0; i<array.length; i++){
-
+  for (let i=0; i<array.length; i++){
+    sum += array[i];
   }
-let exampleArray = [1, 1, 2, 3, 5, 8, 13, 21];
-console.log(sumAll(exampleArray));
+  
+console.log(sumAll(fibonacci));
   // TODO: loop to add items
 
   // TODO: return the sum
@@ -116,7 +119,6 @@ console.log(sumAll(exampleArray));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 function allPositive() {
-
 }
 
 
