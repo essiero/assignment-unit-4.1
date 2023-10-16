@@ -61,6 +61,9 @@ function getLast(array) {
       return array[array.length-1];
     }
   }
+let sampleArray = [1, 9, 1, 9, 1, 3];
+console.log('Example Array 1: ', sampleArray);
+console.log('The last number of which is: ', getLast(sampleArray));
 
 
 // 7. Function to find a value in an array. Return true if the 
@@ -78,7 +81,7 @@ function find(value, array) {
 }
 let phoneNumber = [8, 6, 7, 5, 3, 0, 9];
 
-console.log('Example array: ', phoneNumber);
+console.log('Example array 2: ', phoneNumber);
 console.log('Is there a zero? ', find(0, phoneNumber));
 console.log('Is there a four? ', find(4, phoneNumber));
 
@@ -95,9 +98,15 @@ return false;
 }
 console.log('Is the first letter in Essie an E?', isFirstLetter('E', 'Essie'));
 console.log('Is the first letter in Essie an S?', isFirstLetter('S', 'Essie'));
+
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
+  for (i=0; i<array.length; i++){
+
+  }
+let exampleArray = [1, 1, 2, 3, 5, 8, 13, 21];
+console.log(sumAll(exampleArray));
   // TODO: loop to add items
 
   // TODO: return the sum
